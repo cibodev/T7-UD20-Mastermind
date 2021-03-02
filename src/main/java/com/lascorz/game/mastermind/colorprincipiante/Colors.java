@@ -1,4 +1,4 @@
-package com.lascorz.game.mastermind;
+package com.lascorz.game.mastermind.colorprincipiante;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -7,11 +7,15 @@ import java.awt.Window;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import com.lascorz.game.mastermind.principiante.Principiante;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
+import java.awt.image.ImageObserver;
 import java.awt.event.ActionEvent;
 
 public class Colors extends JFrame {
@@ -21,13 +25,13 @@ public class Colors extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private static Colors venta;
 	static Color[]	rgb = new Color[13];
 	private static JTextField textField;
 	private static JTextField textField_1;
 	private static JTextField textField_2;
 	private static JTextField textField_3;
 	static int count = 0;
-    Window window = null;
 
 
 	/**
@@ -35,12 +39,13 @@ public class Colors extends JFrame {
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
+
 			public void run() {
 				try {
-					Colors ventana = new Colors();
+					venta = new Colors();
 					SelecColor();
 					addEventos();
-					ventana.setVisible(true);
+					venta.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -85,13 +90,12 @@ public class Colors extends JFrame {
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Mastermind.colores[0]=textField.getBackground();
-				Mastermind.colores[1]=textField_1.getBackground();
-				Mastermind.colores[2]=textField_2.getBackground();
-				Mastermind.colores[3]=textField_3.getBackground();
-				Mastermind.randomColors();
-	            window.dispatchEvent(new WindowEvent(window, WindowEvent.WINDOW_CLOSING));
-
+				Principiante.colores[0]=textField.getBackground();
+				Principiante.colores[1]=textField_1.getBackground();
+				Principiante.colores[2]=textField_2.getBackground();
+				Principiante.colores[3]=textField_3.getBackground();
+				Principiante.randomColors();
+				venta.dispose();
 			}
 		});
 		btnNewButton.setBounds(63, 139, 89, 23);
@@ -103,10 +107,10 @@ public class Colors extends JFrame {
 		
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				textField.setBackground(getBackground());
-				textField_1.setBackground(getBackground());
-				textField_2.setBackground(getBackground());
-				textField_3.setBackground(getBackground());
+				textField.setBackground(rgb[0]);
+				textField_1.setBackground(rgb[1]);
+				textField_2.setBackground(rgb[2]);
+				textField_3.setBackground(rgb[3]);
 			}
 		});
 	}
@@ -249,6 +253,11 @@ public class Colors extends JFrame {
 		rgb[10] = Color.magenta;
 		rgb[11] = Color.cyan;
 		rgb[12] = Color.blue;
+		textField.setBackground(rgb[0]);
+		textField_1.setBackground(rgb[1]);
+		textField_2.setBackground(rgb[2]);
+		textField_3.setBackground(rgb[3]);
+
 
 	}
 }
