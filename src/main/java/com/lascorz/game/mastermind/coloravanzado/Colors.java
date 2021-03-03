@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 import com.lascorz.game.mastermind.avanzado.Avanzado;
+import com.lascorz.game.mastermind.colores.Paletacolores;
 import com.lascorz.game.mastermind.principiante.Principiante;
 
 public class Colors extends JFrame {
@@ -124,11 +125,11 @@ public class Colors extends JFrame {
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				textField.setBackground(rgb[0]);
-				textField_1.setBackground(rgb[1]);
-				textField_2.setBackground(rgb[2]);
-				textField_3.setBackground(rgb[3]);
-				textField_4.setBackground(rgb[4]);
-				textField_5.setBackground(rgb[5]);
+				textField_1.setBackground(rgb[0]);
+				textField_2.setBackground(rgb[0]);
+				textField_3.setBackground(rgb[0]);
+				textField_4.setBackground(rgb[0]);
+				textField_5.setBackground(rgb[0]);
 
 			}
 		});
@@ -138,14 +139,7 @@ public class Colors extends JFrame {
 		textField.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 13) {
-					textField.setBackground(rgb[count]);
-					count++;
-				} else {
-					count = 0;
-					textField.setBackground(rgb[count]);
-					count++;
-				}
+				textField.setBackground(Paletacolores.main(null,textField));
 			}
 
 			@Override
@@ -168,14 +162,7 @@ public class Colors extends JFrame {
 		textField_1.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 13) {
-					textField_1.setBackground(rgb[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_1.setBackground(rgb[count]);
-					count++;
-				}
+				textField_1.setBackground(Paletacolores.main(null,textField_1));
 			}
 
 			@Override
@@ -198,14 +185,7 @@ public class Colors extends JFrame {
 		textField_2.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 13) {
-					textField_2.setBackground(rgb[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_2.setBackground(rgb[count]);
-					count++;
-				}
+				textField_2.setBackground(Paletacolores.main(null,textField_2));
 			}
 
 			@Override
@@ -228,14 +208,7 @@ public class Colors extends JFrame {
 		textField_3.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 13) {
-					textField_3.setBackground(rgb[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_3.setBackground(rgb[count]);
-					count++;
-				}
+				textField_3.setBackground(Paletacolores.main(null,textField_3));
 			}
 
 			@Override
@@ -258,14 +231,7 @@ public class Colors extends JFrame {
 		textField_4.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 13) {
-					textField_4.setBackground(rgb[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_4.setBackground(rgb[count]);
-					count++;
-				}
+				textField_4.setBackground(Paletacolores.main(null,textField_4));
 			}
 
 			@Override
@@ -288,14 +254,7 @@ public class Colors extends JFrame {
 		textField_5.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 13) {
-					textField_5.setBackground(rgb[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_5.setBackground(rgb[count]);
-					count++;
-				}
+				textField_5.setBackground(Paletacolores.main(null,textField_5));
 			}
 
 			@Override
@@ -333,11 +292,11 @@ public class Colors extends JFrame {
 		rgb[11] = Color.cyan;
 		rgb[12] = Color.blue;
 		textField.setBackground(rgb[0]);
-		textField_1.setBackground(rgb[1]);
-		textField_2.setBackground(rgb[2]);
-		textField_3.setBackground(rgb[3]);
-		textField_4.setBackground(rgb[4]);
-		textField_5.setBackground(rgb[5]);
+		textField_1.setBackground(rgb[0]);
+		textField_2.setBackground(rgb[0]);
+		textField_3.setBackground(rgb[0]);
+		textField_4.setBackground(rgb[0]);
+		textField_5.setBackground(rgb[0]);
 
 
 	}

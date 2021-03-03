@@ -11,6 +11,7 @@ import javax.swing.SpringLayout;
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.RowSpec;
+import com.lascorz.game.mastermind.App;
 import com.lascorz.game.mastermind.colorprincipiante.Colors;
 import com.lascorz.game.mastermind.nivel.Niveles;
 
@@ -59,7 +60,11 @@ import javax.swing.JMenuItem;
 
 public class Principiante extends JFrame {
 	
-	static Color[] colores = new Color[4];
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public static Color[] colores = new Color[4];
 	static int count = 0;
 	static int intentos = 0;
 	private JPanel contentPane;
@@ -153,8 +158,11 @@ public class Principiante extends JFrame {
 	private static JTextField textField_87;
 	private static JLabel lblColoresSecretos;
 	private static JLayeredPane layeredPane_1;
-	private JMenuItem mntmNewMenuItem_1;
+	private static JMenuItem mntmNewMenuItem_2;
+	private static JMenuItem mntmNewMenuItem_1;
+	private static JMenuItem mntmNewMenuItem;
 
+	public static Principiante principiante;
 
 	/**
 	 * Launch the application.
@@ -163,14 +171,17 @@ public class Principiante extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Principiante frame = new Principiante();
+					principiante = new Principiante();
 					colors();
 					addEventos();
-					frame.setVisible(true);
+					Primerajugada();
+					principiante.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
+
+
 		});
 	}
 
@@ -187,11 +198,15 @@ public class Principiante extends JFrame {
 		JMenu mnNewMenu = new JMenu("Opciones");
 		menuBar.add(mnNewMenu);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("Seleccionar Colores");
-		mnNewMenu.add(mntmNewMenuItem);
+		mntmNewMenuItem = new JMenuItem("Seleccionar Colores");
+		mntmNewMenuItem.setVisible(false);
+		mnNewMenu.add(mntmNewMenuItem);		
 		
 		mntmNewMenuItem_1 = new JMenuItem("Seleccionar Nivel");
 		mnNewMenu.add(mntmNewMenuItem_1);
+		
+		mntmNewMenuItem_2 = new JMenuItem("Nuevo Juego");
+		mnNewMenu.add(mntmNewMenuItem_2);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(204, 204, 204));
 		setContentPane(contentPane);
@@ -785,6 +800,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else {
                 		intentos++;
                 	    btnNewButton.setBounds(250, 95, 81, 25);
@@ -817,6 +834,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else {
                 		intentos++;
                 	    btnNewButton.setBounds(250, 140, 81, 25);
@@ -849,6 +868,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else {
                 		intentos++;
                 	    btnNewButton.setBounds(250, 190, 81, 25);
@@ -881,6 +902,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else {
                 		intentos++;
                 	    btnNewButton.setBounds(250, 240, 81, 25);
@@ -913,6 +936,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else{
                 		intentos++;
                 	    btnNewButton.setBounds(250, 290, 81, 25);
@@ -945,6 +970,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else{
                 		intentos++;
                 	    btnNewButton.setBounds(250, 335, 81, 25);
@@ -977,6 +1004,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else{
                 		intentos++;
                 	    btnNewButton.setBounds(250, 385, 81, 25);
@@ -1009,6 +1038,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else{
                 		intentos++;
                 	    btnNewButton.setBounds(250, 435, 81, 25);
@@ -1041,6 +1072,8 @@ public class Principiante extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 		lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else{
                 		intentos++;
                 	    btnNewButton.setBounds(250, 485, 81, 25);
@@ -1071,17 +1104,24 @@ public class Principiante extends JFrame {
 	            	}
             		if(textField_84.getBackground().equals(Color.black) && textField_85.getBackground().equals(Color.black) && textField_86.getBackground().equals(Color.black) && textField_87.getBackground().equals(Color.black)) {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
+                		lblColoresSecretos.setVisible(true);
+                		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
                 	}else{
                 		intentos++;
                 	    btnNewButton.setBounds(250, 485, 81, 25);
                 		JOptionPane.showMessageDialog(null, "Se te acabaron los intentos has perdido!");
 						btnNewButton.setVisible(false);
+						lblColoresSecretos.setVisible(true);
+                		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
 
                 	}
 
-            		
             	}
-            	
+        		Primerajugada();
+
 
             	
             	
@@ -1091,6 +1131,8 @@ public class Principiante extends JFrame {
             
 
 		});
+		
+		
 		
 		
 		mntmNewMenuItem.addActionListener(new ActionListener() {
@@ -1105,8 +1147,26 @@ public class Principiante extends JFrame {
             }
         });
 		
+		
+		mntmNewMenuItem_2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	nuevo();
+            }
+        });
+		
 	}
 
+	
+	public static void nuevo() {
+		intentos = 0;
+		principiante.dispose();
+		App.main(null);
+	}
+	
+	public static void Primerajugada() {
+		if(App.PrimeraJugada) {mntmNewMenuItem.setVisible(true);}
+	}
+	
 	private static void addPopup(Component component, final JPopupMenu popup) {
 		component.addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
@@ -1127,7 +1187,7 @@ public class Principiante extends JFrame {
 		});
 	}
 
-	private static void colors() {
+	public static void colors() {
 		for (int i = 0; i < 4; i++) {
 			colores[i] = new Color((int) (Math.random() * 0x1000000));
 		}

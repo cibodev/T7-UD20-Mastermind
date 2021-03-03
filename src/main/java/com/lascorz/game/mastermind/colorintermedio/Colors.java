@@ -1,23 +1,16 @@
-package com.lascorz.game.mastermind.colorprincipiante;
+package com.lascorz.game.mastermind.colorintermedio;
 
 import java.awt.Color;
 import java.awt.EventQueue;
-import java.awt.Window;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
-import com.lascorz.game.mastermind.colores.Paletacolores;
-import com.lascorz.game.mastermind.principiante.Principiante;
-
-import javax.swing.JButton;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.WindowEvent;
-import java.awt.image.ImageObserver;
-import java.awt.event.ActionEvent;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import com.lascorz.game.mastermind.colores.Paletacolores;
 
 public class Colors extends JFrame {
 
@@ -26,13 +19,14 @@ public class Colors extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	public static Colors venta;
+	private static Colors venta;
 	static Color[]	rgb = new Color[13];
-	protected static JTextField textField;
-	protected static JTextField textField_1;
-	protected static JTextField textField_2;
-	protected static JTextField textField_3;
+	private static JTextField textField;
+	private static JTextField textField_1;
+	private static JTextField textField_2;
+	private static JTextField textField_3;
 	static int count = 0;
+	private static JTextField textField_4;
 
 
 	/**
@@ -59,7 +53,7 @@ public class Colors extends JFrame {
 	 */
 	public Colors() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 354, 265);
+		setBounds(100, 100, 417, 235);
 		contentPane = new JPanel();
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
@@ -91,20 +85,27 @@ public class Colors extends JFrame {
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Principiante.colores[0]=textField.getBackground();
-				Principiante.colores[1]=textField_1.getBackground();
-				Principiante.colores[2]=textField_2.getBackground();
-				Principiante.colores[3]=textField_3.getBackground();
-				Principiante.randomColors();
+				Intermedio.colores[0]=textField.getBackground();
+				Intermedio.colores[1]=textField_1.getBackground();
+				Intermedio.colores[2]=textField_2.getBackground();
+				Intermedio.colores[3]=textField_3.getBackground();
+				Intermedio.colores[4]=textField_4.getBackground();
+				Intermedio.randomColors();
 				venta.dispose();
 			}
 		});
-		btnNewButton.setBounds(63, 139, 89, 23);
+		btnNewButton.setBounds(100, 136, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Cancelar");
-		btnNewButton_1.setBounds(177, 139, 89, 23);
+		btnNewButton_1.setBounds(214, 136, 89, 23);
 		contentPane.add(btnNewButton_1);
+		
+		textField_4 = new JTextField();
+		textField_4.setEditable(false);
+		textField_4.setColumns(10);
+		textField_4.setBounds(306, 48, 40, 36);
+		contentPane.add(textField_4);
 		
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -112,6 +113,7 @@ public class Colors extends JFrame {
 				textField_1.setBackground(rgb[0]);
 				textField_2.setBackground(rgb[0]);
 				textField_3.setBackground(rgb[0]);
+				textField_4.setBackground(rgb[0]);
 			}
 		});
 	}
@@ -209,6 +211,29 @@ public class Colors extends JFrame {
 			}
 
 		});
+		textField_4.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				textField_4.setBackground(Paletacolores.main(null,textField_4));
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+
+		});
 		
 	}
 	
@@ -230,7 +255,6 @@ public class Colors extends JFrame {
 		textField_1.setBackground(rgb[0]);
 		textField_2.setBackground(rgb[0]);
 		textField_3.setBackground(rgb[0]);
-
-
+		textField_4.setBackground(rgb[0]);
 	}
 }

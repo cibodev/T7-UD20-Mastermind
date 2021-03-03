@@ -8,7 +8,9 @@ import javax.swing.SpringLayout;
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.RowSpec;
+import com.lascorz.game.mastermind.App;
 import com.lascorz.game.mastermind.coloravanzado.*;
+import com.lascorz.game.mastermind.nivel.Niveles;
 
 import java.awt.GridLayout;
 import javax.swing.JLabel;
@@ -55,6 +57,10 @@ import javax.swing.JMenuItem;
 
 public class Avanzado extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static Color[] colores = new Color[6];
 	static int count = 0;
 	static int intentos = 0;
@@ -145,6 +151,10 @@ public class Avanzado extends JFrame {
 	private static JTextField textField_81;
 	private static JTextField textField_82;
 	private static JTextField textField_83;
+	public static Avanzado avanzado ;
+	private static JMenuItem mntmNewMenuItem_1;
+	private static JMenuItem mntmNewMenuItem;
+	private static JMenuItem mntmNewMenuItem_2;
 
 	/**
 	 * Launch the application.
@@ -153,10 +163,11 @@ public class Avanzado extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Avanzado frame = new Avanzado();
+					avanzado = new Avanzado();
 					colors();
 					addEventos();
-					frame.setVisible(true);
+	        		Primerajugada();
+					avanzado.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -177,8 +188,16 @@ public class Avanzado extends JFrame {
 		JMenu mnNewMenu = new JMenu("Opciones");
 		menuBar.add(mnNewMenu);
 
-		JMenuItem mntmNewMenuItem = new JMenuItem("Seleccionar Colores");
+		mntmNewMenuItem = new JMenuItem("Seleccionar Colores");
 		mnNewMenu.add(mntmNewMenuItem);
+		
+		mntmNewMenuItem_1 = new JMenuItem("Seleccionar Nivel");
+		mntmNewMenuItem.setVisible(false);
+		mnNewMenu.add(mntmNewMenuItem_1);
+		
+		mntmNewMenuItem_2 = new JMenuItem("Nuevo Juego");
+		mnNewMenu.add(mntmNewMenuItem_2);
+		
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(204, 204, 204));
 		setContentPane(contentPane);
@@ -762,9 +781,11 @@ public class Avanzado extends JFrame {
 						JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 100, 81, 25);
+                		App.PrimeraJugada = true;
 					}
 
 				
@@ -810,9 +831,11 @@ public class Avanzado extends JFrame {
 						JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 150, 81, 25);
+                		App.PrimeraJugada = true;
 					}
 
 				
@@ -858,9 +881,11 @@ public class Avanzado extends JFrame {
 						JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 200, 81, 25);
+                		App.PrimeraJugada = true;
 					}
 
 				
@@ -906,9 +931,11 @@ public class Avanzado extends JFrame {
 						JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 250, 81, 25);
+                		App.PrimeraJugada = true;
 					}
 
 				
@@ -954,9 +981,12 @@ public class Avanzado extends JFrame {
 						JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
+
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 300, 81, 25);
+                		App.PrimeraJugada = true;
 					}
 
 				
@@ -1001,16 +1031,21 @@ public class Avanzado extends JFrame {
 							&& textField_83.getBackground().equals(Color.black)) {
 						JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
 						lblColoresSecretos.setVisible(true);
-						layeredPane_1.setVisible(true);
+                		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
 					} else {
 						intentos++;
                 		JOptionPane.showMessageDialog(null, "Se te acabaron los intentos has perdido!");
 						btnNewButton.setVisible(false);
+						lblColoresSecretos.setVisible(true);
+                		layeredPane_1.setVisible(true);
+                		App.PrimeraJugada = true;
 					}
 
-				
 
 				}
+        		Primerajugada();
+
 
 			}
 
@@ -1021,9 +1056,32 @@ public class Avanzado extends JFrame {
 				Colors.main(null);
 			}
 		});
+		
+		mntmNewMenuItem_1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	Niveles.main(null);
+            }
+        });
+		
+		mntmNewMenuItem_2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	nuevo();
+            }
+        });
 
 	}
 
+	public static void Primerajugada() {
+		if(App.PrimeraJugada) {mntmNewMenuItem.setVisible(true);}
+	}
+
+	
+	public static void nuevo() {
+		intentos = 0;
+		avanzado.dispose();
+		Avanzado.main(null);
+	}
+	
 	private static void addPopup(Component component, final JPopupMenu popup) {
 		component.addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
