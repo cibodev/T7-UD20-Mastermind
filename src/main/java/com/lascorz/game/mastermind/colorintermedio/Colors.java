@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import com.lascorz.game.mastermind.colores.Paletacolores;
+import com.lascorz.game.mastermind.intermedio.Intermedio;
 
 public class Colors extends JFrame {
 

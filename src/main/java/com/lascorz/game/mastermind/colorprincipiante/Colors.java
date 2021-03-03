@@ -2,21 +2,15 @@ package com.lascorz.game.mastermind.colorprincipiante;
 
 import java.awt.Color;
 import java.awt.EventQueue;
-import java.awt.Window;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
 import com.lascorz.game.mastermind.colores.Paletacolores;
 import com.lascorz.game.mastermind.principiante.Principiante;
-
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.WindowEvent;
-import java.awt.image.ImageObserver;
 import java.awt.event.ActionEvent;
 
 public class Colors extends JFrame {

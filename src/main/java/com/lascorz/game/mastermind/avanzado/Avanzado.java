@@ -4,45 +4,15 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.SpringLayout;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
 import com.lascorz.game.mastermind.App;
 import com.lascorz.game.mastermind.coloravanzado.*;
 import com.lascorz.game.mastermind.nivel.Niveles;
-
-import java.awt.GridLayout;
 import javax.swing.JLabel;
-import java.awt.ScrollPane;
-import java.awt.Panel;
-import javax.swing.JTextPane;
-import javax.swing.JTabbedPane;
 import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import net.miginfocom.swing.MigLayout;
-import com.jgoodies.forms.factories.DefaultComponentFactory;
-import javax.swing.JFormattedTextField;
-import javax.swing.JScrollPane;
-import javax.swing.JDesktopPane;
-import java.awt.CardLayout;
-import java.awt.Component;
-import javax.swing.Box;
-import javax.swing.JComboBox;
-import javax.swing.JEditorPane;
-import javax.swing.JTable;
-import javax.swing.JPopupMenu;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.Random;
-
-import javax.swing.DropMode;
-import javax.swing.JSplitPane;
-import javax.swing.JProgressBar;
-import javax.swing.JSeparator;
 import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.border.EtchedBorder;
@@ -50,7 +20,6 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
-import javax.swing.JToolBar;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -782,10 +751,10 @@ public class Avanzado extends JFrame {
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
                 		App.PrimeraJugada = true;
+						btnNewButton.setVisible(false);
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 100, 81, 25);
-                		App.PrimeraJugada = true;
 					}
 
 				
@@ -832,10 +801,10 @@ public class Avanzado extends JFrame {
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
                 		App.PrimeraJugada = true;
+						btnNewButton.setVisible(false);
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 150, 81, 25);
-                		App.PrimeraJugada = true;
 					}
 
 				
@@ -882,10 +851,11 @@ public class Avanzado extends JFrame {
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
                 		App.PrimeraJugada = true;
+						btnNewButton.setVisible(false);
+
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 200, 81, 25);
-                		App.PrimeraJugada = true;
 					}
 
 				
@@ -932,10 +902,11 @@ public class Avanzado extends JFrame {
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
                 		App.PrimeraJugada = true;
+						btnNewButton.setVisible(false);
+
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 250, 81, 25);
-                		App.PrimeraJugada = true;
 					}
 
 				
@@ -982,11 +953,11 @@ public class Avanzado extends JFrame {
 						lblColoresSecretos.setVisible(true);
 						layeredPane_1.setVisible(true);
                 		App.PrimeraJugada = true;
+						btnNewButton.setVisible(false);
 
 					} else {
 						intentos++;
 						btnNewButton.setBounds(357, 300, 81, 25);
-                		App.PrimeraJugada = true;
 					}
 
 				
@@ -1032,6 +1003,7 @@ public class Avanzado extends JFrame {
 						JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
 						lblColoresSecretos.setVisible(true);
                 		layeredPane_1.setVisible(true);
+						btnNewButton.setVisible(false);
                 		App.PrimeraJugada = true;
 					} else {
 						intentos++;
@@ -1082,26 +1054,6 @@ public class Avanzado extends JFrame {
 		Avanzado.main(null);
 	}
 	
-	private static void addPopup(Component component, final JPopupMenu popup) {
-		component.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-
-			public void mouseReleased(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-
-			private void showMenu(MouseEvent e) {
-				popup.show(e.getComponent(), e.getX(), e.getY());
-			}
-		});
-	}
-
 	private static void colors() {
 		for (int i = 0; i < 6; i++) {
 			colores[i] = new Color((int) (Math.random() * 0x1000000));

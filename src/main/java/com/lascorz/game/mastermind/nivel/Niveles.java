@@ -1,7 +1,6 @@
 package com.lascorz.game.mastermind.nivel;
 
 import java.awt.EventQueue;
-import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.border.EtchedBorder;
 
 import com.lascorz.game.mastermind.avanzado.Avanzado;
+import com.lascorz.game.mastermind.intermedio.Intermedio;
 import com.lascorz.game.mastermind.principiante.Principiante;
 
 public class Niveles extends JFrame {
@@ -23,7 +23,6 @@ public class Niveles extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	protected Window principiante;
 	private static Niveles level;
 	private JRadioButton rdbtnNewRadioButton;
 	private JRadioButton rdbtnNewRadioButton_1;
@@ -102,20 +101,23 @@ public class Niveles extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if (rdbtnNewRadioButton.isSelected()) {
 					if (Principiante.principiante == null) {
+						System.out.print("asdf");
 						Principiante.main(null);
 					}
-					if (!(Avanzado.avanzado == null)) {
+					if (Avanzado.avanzado != null) {
+						System.out.print("FFFF");
 						Avanzado.avanzado.dispose();
+						Principiante.main(null);
 					}
-//            		if(!(Intermedio.intermedio == null)) {
-//            			Intermedio.intermedio.dispose();
-//            		}
+					if(!(Intermedio.intermedio == null)) {
+            			Intermedio.intermedio.dispose();
+            		}
 					level.dispose();
 				}
 				if (rdbtnNewRadioButton_1.isSelected()) {
-//					if (Intermedio.intermedio == null) {
-//						Intermedio.main(null);
-//					}
+					if (Intermedio.intermedio == null) {
+						Intermedio.main(null);
+					}
 					if (!(Principiante.principiante == null)) {
 						Principiante.principiante.dispose();
 					}
@@ -128,12 +130,12 @@ public class Niveles extends JFrame {
 					if (Avanzado.avanzado == null) {
 						Avanzado.main(null);
 					}
-					if (!(Principiante.principiante == null)) {
+					if (Principiante.principiante != null) {
 						Principiante.principiante.dispose();
 					}
-//					if (!(Intermedio.intermedio == null)) {
-//						Intermedio.intermedio.dispose();
-//					}
+					if (!(Intermedio.intermedio == null)) {
+						Intermedio.intermedio.dispose();
+					}
 					level.dispose();
 				}
 			}

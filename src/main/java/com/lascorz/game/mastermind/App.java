@@ -5,8 +5,7 @@ import java.awt.EventQueue;
 import com.lascorz.game.mastermind.principiante.Principiante;
 
 /**
- * Hello world!
- *
+ * Autores David, Christian, Emma.
  */
 public class App {
 	

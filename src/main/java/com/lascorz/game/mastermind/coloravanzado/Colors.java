@@ -1,22 +1,16 @@
 package com.lascorz.game.mastermind.coloravanzado;
-
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.border.EmptyBorder;
-
 import com.lascorz.game.mastermind.avanzado.Avanzado;
 import com.lascorz.game.mastermind.colores.Paletacolores;
-import com.lascorz.game.mastermind.principiante.Principiante;
 
 public class Colors extends JFrame {
 
