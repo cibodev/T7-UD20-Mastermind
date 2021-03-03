@@ -1,3 +1,6 @@
+/*Dudas:
+ * 	Que es lo que hace que los cuadros cambien de color/donde esta*/
+
 package com.lascorz.game.mastermind;
 
 import java.awt.BorderLayout;
@@ -56,7 +59,7 @@ import javax.swing.JMenuItem;
 
 public class Mastermind_Intermedio extends JFrame {
 	
-	static Color[] colores = new Color[4];
+	static Color[] colores = new Color[5];
 	static int count = 0;
 	static int intentos = 0;
 	private JPanel contentPane;
@@ -236,6 +239,7 @@ public class Mastermind_Intermedio extends JFrame {
 		layeredPane_1.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		layeredPane_1.setBounds(379, 452, 273, 62);
 		contentPane.add(layeredPane_1);
+		layeredPane_1.setVisible(false);
 
 		textField_4 = new JTextField();
 		textField_4.setEditable(false);
@@ -271,6 +275,7 @@ public class Mastermind_Intermedio extends JFrame {
 		lblColoresSecretos.setToolTipText("");
 		lblColoresSecretos.setBounds(379, 429, 116, 14);
 		contentPane.add(lblColoresSecretos);
+		lblColoresSecretos.setVisible(false);
 
 		textField_8 = new JTextField();
 		textField_8.setEditable(false);
@@ -499,169 +504,169 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_52 = new JTextField();
 		textField_52.setEditable(false);
 		textField_52.setColumns(10);
-		textField_52.setBounds(389, 86, 42, 38);
+		textField_52.setBounds(597, 41, 42, 38);
 		contentPane.add(textField_52);
 		
 		textField_53 = new JTextField();
 		textField_53.setEditable(false);
 		textField_53.setColumns(10);
-		textField_53.setBounds(441, 86, 42, 38);
+		textField_53.setBounds(389, 86, 42, 38);
 		contentPane.add(textField_53);
 		
 		textField_54 = new JTextField();
 		textField_54.setEditable(false);
 		textField_54.setColumns(10);
-		textField_54.setBounds(493, 86, 42, 38);
+		textField_54.setBounds(441, 86, 42, 38);
 		contentPane.add(textField_54);
 		
 		textField_55 = new JTextField();
 		textField_55.setEditable(false);
 		textField_55.setColumns(10);
-		textField_55.setBounds(545, 86, 42, 38);
+		textField_55.setBounds(493, 86, 42, 38);
 		contentPane.add(textField_55);
 		
 		textField_56 = new JTextField();
 		textField_56.setEditable(false);
 		textField_56.setColumns(10);
-		textField_56.setBounds(597, 86, 42, 38);
+		textField_56.setBounds(545, 86, 42, 38);
 		contentPane.add(textField_56);
 		
 		textField_57 = new JTextField();
 		textField_57.setEditable(false);
 		textField_57.setColumns(10);
-		textField_57.setBounds(389, 135, 42, 38);
+		textField_57.setBounds(597, 86, 42, 38);
 		contentPane.add(textField_57);
 		
 		textField_58 = new JTextField();
 		textField_58.setEditable(false);
 		textField_58.setColumns(10);
-		textField_58.setBounds(441, 135, 42, 38);
+		textField_58.setBounds(389, 135, 42, 38);
 		contentPane.add(textField_58);
 		
 		textField_59 = new JTextField();
 		textField_59.setEditable(false);
 		textField_59.setColumns(10);
-		textField_59.setBounds(493, 135, 42, 38);
+		textField_59.setBounds(441, 135, 42, 38);
 		contentPane.add(textField_59);
 		
 		textField_60 = new JTextField();
 		textField_60.setEditable(false);
 		textField_60.setColumns(10);
-		textField_60.setBounds(545, 135, 42, 38);
+		textField_60.setBounds(493, 135, 42, 38);
 		contentPane.add(textField_60);
 		
 		textField_61 = new JTextField();
 		textField_61.setEditable(false);
 		textField_61.setColumns(10);
-		textField_61.setBounds(597, 135, 42, 38);
+		textField_61.setBounds(545, 135, 42, 38);
 		contentPane.add(textField_61);
 		
 		textField_62 = new JTextField();
 		textField_62.setEditable(false);
 		textField_62.setColumns(10);
-		textField_62.setBounds(389, 184, 42, 38);
+		textField_62.setBounds(597, 135, 42, 38);
 		contentPane.add(textField_62);
 		
 		textField_63 = new JTextField();
 		textField_63.setEditable(false);
 		textField_63.setColumns(10);
-		textField_63.setBounds(441, 184, 42, 38);
+		textField_63.setBounds(389, 184, 42, 38);
 		contentPane.add(textField_63);
 		
 		textField_64 = new JTextField();
 		textField_64.setEditable(false);
 		textField_64.setColumns(10);
-		textField_64.setBounds(493, 184, 42, 38);
+		textField_64.setBounds(441, 184, 42, 38);
 		contentPane.add(textField_64);
 		
 		textField_65 = new JTextField();
 		textField_65.setEditable(false);
 		textField_65.setColumns(10);
-		textField_65.setBounds(545, 184, 42, 38);
+		textField_65.setBounds(493, 184, 42, 38);
 		contentPane.add(textField_65);
 		
 		textField_66 = new JTextField();
 		textField_66.setEditable(false);
 		textField_66.setColumns(10);
-		textField_66.setBounds(597, 184, 42, 38);
+		textField_66.setBounds(545, 184, 42, 38);
 		contentPane.add(textField_66);
 		
 		textField_67 = new JTextField();
 		textField_67.setEditable(false);
 		textField_67.setColumns(10);
-		textField_67.setBounds(389, 233, 42, 38);
+		textField_67.setBounds(597, 184, 42, 38);
 		contentPane.add(textField_67);
 		
 		textField_68 = new JTextField();
 		textField_68.setEditable(false);
 		textField_68.setColumns(10);
-		textField_68.setBounds(441, 233, 42, 38);
+		textField_68.setBounds(389, 233, 42, 38);
 		contentPane.add(textField_68);
 		
 		textField_69 = new JTextField();
 		textField_69.setEditable(false);
 		textField_69.setColumns(10);
-		textField_69.setBounds(493, 233, 42, 38);
+		textField_69.setBounds(441, 233, 42, 38);
 		contentPane.add(textField_69);
 		
 		textField_70 = new JTextField();
 		textField_70.setEditable(false);
 		textField_70.setColumns(10);
-		textField_70.setBounds(545, 233, 42, 38);
+		textField_70.setBounds(493, 233, 42, 38);
 		contentPane.add(textField_70);
 		
 		textField_71 = new JTextField();
 		textField_71.setEditable(false);
 		textField_71.setColumns(10);
-		textField_71.setBounds(597, 233, 42, 38);
+		textField_71.setBounds(545, 233, 42, 38);
 		contentPane.add(textField_71);
 		
 		textField_72 = new JTextField();
 		textField_72.setEditable(false);
 		textField_72.setColumns(10);
-		textField_72.setBounds(389, 282, 42, 38);
+		textField_72.setBounds(597, 233, 42, 38);
 		contentPane.add(textField_72);
 		
 		textField_73 = new JTextField();
 		textField_73.setEditable(false);
 		textField_73.setColumns(10);
-		textField_73.setBounds(441, 282, 42, 38);
+		textField_73.setBounds(389, 282, 42, 38);
 		contentPane.add(textField_73);
 		
 		textField_74 = new JTextField();
 		textField_74.setEditable(false);
 		textField_74.setColumns(10);
-		textField_74.setBounds(493, 282, 42, 38);
+		textField_74.setBounds(441, 282, 42, 38);
 		contentPane.add(textField_74);
 		
 		textField_75 = new JTextField();
 		textField_75.setEditable(false);
 		textField_75.setColumns(10);
-		textField_75.setBounds(545, 282, 42, 38);
+		textField_75.setBounds(493, 282, 42, 38);
 		contentPane.add(textField_75);
 		
 		textField_76 = new JTextField();
 		textField_76.setEditable(false);
 		textField_76.setColumns(10);
-		textField_76.setBounds(597, 282, 42, 38);
+		textField_76.setBounds(545, 282, 42, 38);
 		contentPane.add(textField_76);
 		
 		textField_77 = new JTextField();
 		textField_77.setEditable(false);
 		textField_77.setColumns(10);
-		textField_77.setBounds(389, 331, 42, 38);
+		textField_77.setBounds(597, 282, 42, 38);
 		contentPane.add(textField_77);
 		
 		textField_78 = new JTextField();
 		textField_78.setEditable(false);
 		textField_78.setColumns(10);
-		textField_78.setBounds(441, 331, 42, 38);
+		textField_78.setBounds(389, 331, 42, 38);
 		contentPane.add(textField_78);
 		
 		textField_79 = new JTextField();
 		textField_79.setEditable(false);
 		textField_79.setColumns(10);
-		textField_79.setBounds(493, 331, 42, 38);
+		textField_79.setBounds(441, 331, 42, 38);
 		contentPane.add(textField_79);
 		
 		textField_44 = new JTextField();
@@ -715,7 +720,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_80 = new JTextField();
 		textField_80.setEditable(false);
 		textField_80.setColumns(10);
-		textField_80.setBounds(597, 41, 42, 38);
+		textField_80.setBounds(493, 331, 42, 38);
 		contentPane.add(textField_80);
 		
 		textField_81 = new JTextField();
@@ -785,7 +790,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	}else {
 	            		textField_51.setBackground(Color.white);
 	            	}
-	            	if(textField_12.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_12.getBackground().equals(textField_88.getBackground())) {
 						textField_52.setBackground(Color.black);
 					}else{
 						textField_52.setBackground(Color.white);
@@ -795,7 +800,7 @@ public class Mastermind_Intermedio extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
                 		intentos++;
-                	    btnNewButton.setBounds(250, 95, 81, 25);
+                	    btnNewButton.setBounds(298, 90, 81, 25);
                 	}
             	//ifelse columna 2
             	}else if(intentos==1) {
@@ -820,7 +825,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	}else {
 	            		textField_56.setBackground(Color.white);
 	            	}
-	            	if(textField_17.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_17.getBackground().equals(textField_88.getBackground())) {
 	            		textField_57.setBackground(Color.black);
 	            	}else {
 	            		textField_57.setBackground(Color.white);
@@ -829,7 +834,7 @@ public class Mastermind_Intermedio extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
                 		intentos++;
-                	    btnNewButton.setBounds(250, 140, 81, 25);
+                	    btnNewButton.setBounds(298, 140, 81, 25);
                 	}
 
             	//ifelse columna 3	
@@ -855,7 +860,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	}else {
 	            		textField_61.setBackground(Color.white);
 	            	}
-	            	if(textField_22.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_22.getBackground().equals(textField_88.getBackground())) {
 	            		textField_62.setBackground(Color.black);
 	            	}else {
 	            		textField_62.setBackground(Color.white);
@@ -864,7 +869,7 @@ public class Mastermind_Intermedio extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
                 		intentos++;
-                	    btnNewButton.setBounds(250, 185, 81, 25);
+                	    btnNewButton.setBounds(298, 190, 81, 25);
                 	}
 
             	//ifelse columna 4
@@ -886,11 +891,11 @@ public class Mastermind_Intermedio extends JFrame {
 	            		textField_65.setBackground(Color.white);
 	            	}
 	            	if(textField_26.getBackground().equals(textField_7.getBackground())) {
-	            		textField_65.setBackground(Color.black);
+	            		textField_66.setBackground(Color.black);
 	            	}else {
-	            		textField_65.setBackground(Color.white);
+	            		textField_66.setBackground(Color.white);
 	            	}
-	            	if(textField_27.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_27.getBackground().equals(textField_88.getBackground())) {
 	            		textField_67.setBackground(Color.black);
 	            	}else {
 	            		textField_67.setBackground(Color.white);
@@ -899,7 +904,7 @@ public class Mastermind_Intermedio extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
                 		intentos++;
-                	    btnNewButton.setBounds(250, 230, 81, 25);
+                	    btnNewButton.setBounds(298, 240, 81, 25);
                 	}
 
             	//ifelse columna 5	
@@ -925,7 +930,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	}else {
 	            		textField_71.setBackground(Color.white);
 	            	}
-	            	if(textField_32.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_32.getBackground().equals(textField_88.getBackground())) {
 	            		textField_72.setBackground(Color.black);
 	            	}else {
 	            		textField_72.setBackground(Color.white);
@@ -934,7 +939,7 @@ public class Mastermind_Intermedio extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
                 		intentos++;
-                	    btnNewButton.setBounds(250, 275, 81, 25);
+                	    btnNewButton.setBounds(298, 290, 81, 25);
                 	}
 
             	//ifelse columna 6	
@@ -960,7 +965,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	}else {
 	            		textField_76.setBackground(Color.white);
 	            	}
-	            	if(textField_37.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_37.getBackground().equals(textField_88.getBackground())) {
 	            		textField_77.setBackground(Color.black);
 	            	}else {
 	            		textField_77.setBackground(Color.white);
@@ -969,7 +974,7 @@ public class Mastermind_Intermedio extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
                 		intentos++;
-                	    btnNewButton.setBounds(250, 320, 81, 25);
+                	    btnNewButton.setBounds(298, 340, 81, 25);
                 	}
 
             	//ifelse columna 7	
@@ -995,7 +1000,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	}else {
 	            		textField_81.setBackground(Color.white);
 	            	}
-	            	if(textField_42.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_42.getBackground().equals(textField_88.getBackground())) {
 	            		textField_82.setBackground(Color.black);
 	            	}else {
 	            		textField_82.setBackground(Color.white);
@@ -1004,7 +1009,7 @@ public class Mastermind_Intermedio extends JFrame {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
                 		intentos++;
-                	    btnNewButton.setBounds(250, 365, 81, 25);
+                	    btnNewButton.setBounds(298, 390, 81, 25);
                 	}
 
 
@@ -1031,7 +1036,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	}else {
 	            		textField_86.setBackground(Color.white);
 	            	}
-	            	if(textField_47.getBackground().equals(textField_89.getBackground())) {
+	            	if(textField_47.getBackground().equals(textField_88.getBackground())) {
 	            		textField_87.setBackground(Color.black);
 	            	}else {
 	            		textField_87.setBackground(Color.white);
@@ -1039,8 +1044,7 @@ public class Mastermind_Intermedio extends JFrame {
 	            	if(textField_83.getBackground().equals(Color.black) && textField_84.getBackground().equals(Color.black) && textField_85.getBackground().equals(Color.black) && textField_86.getBackground().equals(Color.black) && textField_87.getBackground().equals(Color.black)) {
                 		JOptionPane.showMessageDialog(null, "Enhorabuena has ganado!");
                 	}else {
-                		intentos++;
-                	    btnNewButton.setBounds(250, 410, 81, 25);
+                		JOptionPane.showMessageDialog(null, "Has perdido");
                 	}
             	}
             }
@@ -1096,14 +1100,14 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_5.setBackground(colores[r.nextInt(5)]);
 		textField_6.setBackground(colores[r.nextInt(5)]);
 		textField_7.setBackground(colores[r.nextInt(5)]);
-		textField_7.setBackground(colores[r.nextInt(5)]);
+		textField_88.setBackground(colores[r.nextInt(5)]);
 	}
 
 	public static void addEventos() {
 		textField_8.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_8.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1133,7 +1137,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_9.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_9.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1163,7 +1167,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_10.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_10.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1193,7 +1197,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_11.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_11.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1220,10 +1224,130 @@ public class Mastermind_Intermedio extends JFrame {
 			}
 
 		});
+		textField_12.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (count < 5) {
+					textField_12.setBackground(colores[count]);
+					count++;
+				} else {
+					count = 0;
+					textField_12.setBackground(colores[count]);
+					count++;
+				}
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+
+		});
+		textField_13.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (count < 5) {
+					textField_13.setBackground(colores[count]);
+					count++;
+				} else {
+					count = 0;
+					textField_13.setBackground(colores[count]);
+					count++;
+				}
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+
+		});
+		textField_14.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (count < 5) {
+					textField_14.setBackground(colores[count]);
+					count++;
+				} else {
+					count = 0;
+					textField_14.setBackground(colores[count]);
+					count++;
+				}
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+
+		});
+		textField_15.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (count < 5) {
+					textField_15.setBackground(colores[count]);
+					count++;
+				} else {
+					count = 0;
+					textField_15.setBackground(colores[count]);
+					count++;
+				}
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+
+		});
 		textField_16.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_16.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1253,7 +1377,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_17.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_17.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1283,7 +1407,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_18.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_18.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1313,7 +1437,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_19.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_19.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1343,7 +1467,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_20.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_20.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1373,7 +1497,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_21.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_21.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1403,7 +1527,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_22.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_22.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1433,7 +1557,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_23.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_23.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1463,7 +1587,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_24.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_24.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1493,7 +1617,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_25.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_25.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1523,7 +1647,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_26.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_26.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1553,7 +1677,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_27.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_27.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1583,7 +1707,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_28.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_28.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1613,7 +1737,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_29.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_29.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1643,7 +1767,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_30.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_30.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1673,7 +1797,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_31.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_31.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1703,7 +1827,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_32.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_32.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1733,7 +1857,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_33.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_33.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1763,7 +1887,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_34.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_34.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1793,7 +1917,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_35.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_35.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1823,7 +1947,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_36.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_36.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1853,7 +1977,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_37.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_37.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1883,7 +2007,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_38.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_38.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1914,7 +2038,7 @@ public class Mastermind_Intermedio extends JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_39.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1944,7 +2068,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_40.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_40.setBackground(colores[count]);
 					count++;
 				} else {
@@ -1974,7 +2098,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_41.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_41.setBackground(colores[count]);
 					count++;
 				} else {
@@ -2004,7 +2128,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_42.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_42.setBackground(colores[count]);
 					count++;
 				} else {
@@ -2034,7 +2158,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_43.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_43.setBackground(colores[count]);
 					count++;
 				} else {
@@ -2064,7 +2188,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_44.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_44.setBackground(colores[count]);
 					count++;
 				} else {
@@ -2094,7 +2218,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_45.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_45.setBackground(colores[count]);
 					count++;
 				} else {
@@ -2124,7 +2248,7 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_46.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_46.setBackground(colores[count]);
 					count++;
 				} else {
@@ -2154,132 +2278,12 @@ public class Mastermind_Intermedio extends JFrame {
 		textField_47.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
+				if (count < 5) {
 					textField_47.setBackground(colores[count]);
 					count++;
 				} else {
 					count = 0;
 					textField_47.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_48.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
-					textField_48.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_48.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_49.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
-					textField_49.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_49.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});
-		textField_50.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
-					textField_50.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_50.setBackground(colores[count]);
-					count++;
-				}
-			}
-
-			@Override
-			public void mousePressed(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseEntered(MouseEvent e) {
-			}
-
-			@Override
-			public void mouseExited(MouseEvent e) {
-			}
-
-		});	
-		textField_51.addMouseListener(new MouseListener() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				if (count < 4) {
-					textField_51.setBackground(colores[count]);
-					count++;
-				} else {
-					count = 0;
-					textField_51.setBackground(colores[count]);
 					count++;
 				}
 			}
