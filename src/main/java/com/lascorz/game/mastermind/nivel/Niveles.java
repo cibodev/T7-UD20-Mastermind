@@ -58,6 +58,8 @@ public class Niveles extends JFrame {
 		layeredPane.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		layeredPane.setBounds(79, 34, 189, 155);
 		contentPane.add(layeredPane);
+		
+		// Creación de los botones para definir el nivel del juego : principiante, intermedio, avanzado //
 
 		rdbtnNewRadioButton_1 = new JRadioButton("Intermedio");
 		rdbtnNewRadioButton_1.setBounds(54, 59, 109, 23);

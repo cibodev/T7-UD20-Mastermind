@@ -17,6 +17,8 @@ public class Colors extends JFrame {
 	/**
 	 * 
 	 */
+	
+	// Diseño del juego //
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private static Colors venta;
@@ -83,6 +85,8 @@ public class Colors extends JFrame {
 		textField_3.setBounds(242, 48, 40, 36);
 		contentPane.add(textField_3);
 		
+		
+		// Botón aceptar //
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -100,6 +104,7 @@ public class Colors extends JFrame {
 		btnNewButton.setBounds(128, 140, 89, 23);
 		contentPane.add(btnNewButton);
 		
+		// Botón cancelar //
 		JButton btnNewButton_1 = new JButton("Cancelar");
 		btnNewButton_1.setBounds(242, 140, 89, 23);
 		contentPane.add(btnNewButton_1);
@@ -271,6 +276,8 @@ public class Colors extends JFrame {
 		
 	}
 	
+	
+	// Creamos un array de colores //
 	public static void SelecColor() {
 		rgb[0] = Color.white;
 		rgb[1] = Color.lightGray;

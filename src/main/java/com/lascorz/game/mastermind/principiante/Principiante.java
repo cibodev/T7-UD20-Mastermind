@@ -30,9 +30,13 @@ public class Principiante extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	// Tenemos 4 colores definidos para el nivel principiante //
 	public static Color[] colores = new Color[4];
 	static int count = 0;
 	static int intentos = 0;
+	
+	// Definimos el diseño del juego //
 	private JPanel contentPane;
 	private static JTextField textField;
 	private static JTextField textField_1;
@@ -160,16 +164,20 @@ public class Principiante extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 
+		// Botón opciones//
 		JMenu mnNewMenu = new JMenu("Opciones");
 		menuBar.add(mnNewMenu);
 
+		// Botón seleccionar colores //
 		mntmNewMenuItem = new JMenuItem("Seleccionar Colores");
 		mntmNewMenuItem.setVisible(false);
 		mnNewMenu.add(mntmNewMenuItem);
 
+		// Botón seleccionar nivel//
 		mntmNewMenuItem_1 = new JMenuItem("Seleccionar Nivel");
 		mnNewMenu.add(mntmNewMenuItem_1);
 
+		// Botón nuevo juego//
 		mntmNewMenuItem_2 = new JMenuItem("Nuevo Juego");
 		mnNewMenu.add(mntmNewMenuItem_2);
 		contentPane = new JPanel();
@@ -177,6 +185,7 @@ public class Principiante extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
+		// Botón colores disponibles //
 		JLabel lblNewLabel = new JLabel("Colores Disponibles");
 		lblNewLabel.setToolTipText("");
 		lblNewLabel.setBounds(588, 41, 116, 14);
@@ -243,12 +252,14 @@ public class Principiante extends JFrame {
 		layeredPane_1.add(textField_7);
 		layeredPane_1.setVisible(false);
 
+		// Colores secretos//
 		lblColoresSecretos = new JLabel("Colores Secretos");
 		lblColoresSecretos.setToolTipText("");
 		lblColoresSecretos.setBounds(588, 155, 116, 14);
 		contentPane.add(lblColoresSecretos);
 		lblColoresSecretos.setVisible(false);
 
+		// Diseño de todos los cuadrados del juego ( 4 filas x 5 columnas) //
 		textField_8 = new JTextField();
 		textField_8.setEditable(false);
 		textField_8.setColumns(10);
@@ -273,6 +284,7 @@ public class Principiante extends JFrame {
 		textField_11.setBounds(191, 41, 42, 38);
 		contentPane.add(textField_11);
 
+		// Botón comprobar para ver si hemos acertado con los colores //
 		final JButton btnNewButton = new JButton("Comp");
 		btnNewButton.setFont(new Font("Verdana", Font.BOLD, 13));
 		btnNewButton.setForeground(new Color(51, 0, 153));
@@ -738,6 +750,8 @@ public class Principiante extends JFrame {
 		contentPane.add(textField_87);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				
 				if (intentos == 0) {
 
 					if (textField_8.getBackground().equals(textField_4.getBackground())) {

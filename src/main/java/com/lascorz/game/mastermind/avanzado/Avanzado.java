@@ -30,9 +30,13 @@ public class Avanzado extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	// Tenemos 6 colores definidos para el nivel avanzado //
 	public static Color[] colores = new Color[6];
 	static int count = 0;
 	static int intentos = 0;
+	
+	// Definimos el diseño del juego //
 	private JPanel contentPane;
 	private static JTextField textField;
 	private static JTextField textField_1;
@@ -172,6 +176,7 @@ public class Avanzado extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
+		//Botón de los colores disponibles //
 		JLabel lblNewLabel = new JLabel("Colores Disponibles");
 		lblNewLabel.setToolTipText("");
 		lblNewLabel.setBounds(35, 350, 116, 14);
@@ -263,6 +268,8 @@ public class Avanzado extends JFrame {
 
 		layeredPane_1.setVisible(false);
 
+		
+		// Botón de los colores secretos //
 		lblColoresSecretos = new JLabel("Colores Secretos");
 		lblColoresSecretos.setToolTipText("");
 		lblColoresSecretos.setBounds(461, 348, 116, 14);
@@ -276,6 +283,7 @@ public class Avanzado extends JFrame {
 		btnNewButton.setBounds(357, 55, 81, 25);
 		contentPane.add(btnNewButton);
 
+		// Diseño de todos los cuadrados del juego (6 filas x 6 columnas) //
 		textField_12 = new JTextField();
 		textField_12.setEditable(false);
 		textField_12.setColumns(10);
@@ -709,6 +717,8 @@ public class Avanzado extends JFrame {
 		contentPane.add(textField_83);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				// Condición: si el cuadrado seleccionado acierta el color del cuadrado se vuelve negro, si no blanco //
 				if (intentos == 0) {
 
 					if (textField_12.getBackground().equals(textField_4.getBackground())) {
@@ -1061,6 +1071,7 @@ public class Avanzado extends JFrame {
 		randomColors();
 	}
 
+	// Colores randoms disponibles //
 	public static void randomColors() {
 		textField.setBackground(colores[0]);
 		textField_1.setBackground(colores[1]);
@@ -1079,7 +1090,7 @@ public class Avanzado extends JFrame {
 
 
 	}
-
+// Condición: tenemos 6 oportunidades (6 filas) para acertar todos los colores, cada vez que no acertemos nos cuenta un intento //
 	public static void addEventos() {
 		textField_12.addMouseListener(new MouseListener() {
 			@Override

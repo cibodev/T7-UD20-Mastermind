@@ -33,9 +33,14 @@ public class Intermedio extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	// Tenemos 5 colores definidos para el nivel intermedio //
+
 	public static Color[] colores = new Color[5];
 	static int count = 0;
 	static int intentos = 0;
+	
+	// Definimos el diseño del juego //
 	private JPanel contentPane;
 	private static JTextField textField;
 	private static JTextField textField_1;
@@ -159,12 +164,15 @@ public class Intermedio extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
+		//Botón de opciones //
 		JMenu mnNewMenu = new JMenu("Opciones");
 		menuBar.add(mnNewMenu);
 		
+		//Botón de seleccionar colores //
 		mntmNewMenuItem = new JMenuItem("Seleccionar Colores");
 		mnNewMenu.add(mntmNewMenuItem);
 		
+		//Botón de seleccionar nivel //
 		mntmNewMenuItem_1 = new JMenuItem("Seleccionar Nivel");
 		mnNewMenu.add(mntmNewMenuItem_1);
 		
@@ -176,6 +184,7 @@ public class Intermedio extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
+		//Botón de los colores disponibles //
 		JLabel lblNewLabel = new JLabel("Colores Disponibles");
 		lblNewLabel.setToolTipText("");
 		lblNewLabel.setBounds(24, 429, 116, 14);
@@ -254,6 +263,7 @@ public class Intermedio extends JFrame {
 		textField_88.setBounds(218, 11, 42, 38);
 		layeredPane_1.add(textField_88);
 
+		// Colores secretos definidos//
 		JLabel lblColoresSecretos = new JLabel("Colores Secretos");
 		lblColoresSecretos.setToolTipText("");
 		lblColoresSecretos.setBounds(379, 429, 116, 14);
@@ -291,6 +301,7 @@ public class Intermedio extends JFrame {
 		btnNewButton.setBounds(298, 46, 81, 25);
 		contentPane.add(btnNewButton);
 		
+		// Diseño de todos los cuadrados del juego ( 8 filas x 5 columnas) //
 		textField_12 = new JTextField();
 		textField_12.setEditable(false);
 		textField_12.setColumns(10);
@@ -748,7 +759,8 @@ public class Intermedio extends JFrame {
 		textField_87.setBounds(597, 380, 42, 38);
 		contentPane.add(textField_87);
 		btnNewButton.addActionListener(new ActionListener() {
-			/*ifelses de ver comparacion con solucion*/
+			
+			// Condición: si el cuadrado seleccionado acierta el color del cuadrado se vuelve negro, si no blanco //
 			public void actionPerformed(ActionEvent e) {
             	//ifelse columna 1
             	if(intentos==0) {
@@ -1134,6 +1146,7 @@ public class Intermedio extends JFrame {
 		textField_7.setBackground(colores[r.nextInt(5)]);
 		textField_88.setBackground(colores[r.nextInt(5)]);
 	}
+	// Condición: tenemos 8 oportunidades (8 filas) para acertar todos los colores, cada vez que no acertemos nos cuenta un intento //
 
 	public static void addEventos() {
 		textField_8.addMouseListener(new MouseListener() {

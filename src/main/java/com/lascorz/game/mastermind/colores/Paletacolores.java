@@ -14,6 +14,7 @@ public class Paletacolores extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	// Ventanas y cuadraddos diseño del juego //
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
