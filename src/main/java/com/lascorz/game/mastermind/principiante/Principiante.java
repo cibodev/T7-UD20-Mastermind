@@ -293,24 +293,28 @@ public class Principiante extends JFrame {
 		contentPane.add(btnNewButton);
 
 		textField_12 = new JTextField();
+		textField_12.setBackground(Color.GRAY);
 		textField_12.setEditable(false);
 		textField_12.setColumns(10);
 		textField_12.setBounds(349, 41, 42, 38);
 		contentPane.add(textField_12);
 
 		textField_13 = new JTextField();
+		textField_13.setBackground(Color.GRAY);
 		textField_13.setEditable(false);
 		textField_13.setColumns(10);
 		textField_13.setBounds(401, 41, 42, 38);
 		contentPane.add(textField_13);
 
 		textField_14 = new JTextField();
+		textField_14.setBackground(Color.GRAY);
 		textField_14.setEditable(false);
 		textField_14.setColumns(10);
 		textField_14.setBounds(453, 41, 42, 38);
 		contentPane.add(textField_14);
 
 		textField_15 = new JTextField();
+		textField_15.setBackground(Color.GRAY);
 		textField_15.setEditable(false);
 		textField_15.setColumns(10);
 		textField_15.setBounds(505, 41, 42, 38);
@@ -534,216 +538,252 @@ public class Principiante extends JFrame {
 		contentPane.add(textField_51);
 
 		textField_52 = new JTextField();
+		textField_52.setBackground(Color.GRAY);
 		textField_52.setEditable(false);
 		textField_52.setColumns(10);
 		textField_52.setBounds(349, 90, 42, 38);
 		contentPane.add(textField_52);
 
 		textField_53 = new JTextField();
+		textField_53.setBackground(Color.GRAY);
 		textField_53.setEditable(false);
 		textField_53.setColumns(10);
 		textField_53.setBounds(401, 90, 42, 38);
 		contentPane.add(textField_53);
 
 		textField_54 = new JTextField();
+		textField_54.setBackground(Color.GRAY);
 		textField_54.setEditable(false);
 		textField_54.setColumns(10);
 		textField_54.setBounds(453, 90, 42, 38);
 		contentPane.add(textField_54);
 
 		textField_55 = new JTextField();
+		textField_55.setBackground(Color.GRAY);
 		textField_55.setEditable(false);
 		textField_55.setColumns(10);
 		textField_55.setBounds(505, 90, 42, 38);
 		contentPane.add(textField_55);
 
 		textField_56 = new JTextField();
+		textField_56.setBackground(Color.GRAY);
 		textField_56.setEditable(false);
 		textField_56.setColumns(10);
 		textField_56.setBounds(349, 135, 42, 38);
 		contentPane.add(textField_56);
 
 		textField_57 = new JTextField();
+		textField_57.setBackground(Color.GRAY);
 		textField_57.setEditable(false);
 		textField_57.setColumns(10);
 		textField_57.setBounds(401, 135, 42, 38);
 		contentPane.add(textField_57);
 
 		textField_58 = new JTextField();
+		textField_58.setBackground(Color.GRAY);
 		textField_58.setEditable(false);
 		textField_58.setColumns(10);
 		textField_58.setBounds(453, 135, 42, 38);
 		contentPane.add(textField_58);
 
 		textField_59 = new JTextField();
+		textField_59.setBackground(Color.GRAY);
 		textField_59.setEditable(false);
 		textField_59.setColumns(10);
 		textField_59.setBounds(505, 135, 42, 38);
 		contentPane.add(textField_59);
 
 		textField_60 = new JTextField();
+		textField_60.setBackground(Color.GRAY);
 		textField_60.setEditable(false);
 		textField_60.setColumns(10);
 		textField_60.setBounds(349, 184, 42, 38);
 		contentPane.add(textField_60);
 
 		textField_61 = new JTextField();
+		textField_61.setBackground(Color.GRAY);
 		textField_61.setEditable(false);
 		textField_61.setColumns(10);
 		textField_61.setBounds(401, 184, 42, 38);
 		contentPane.add(textField_61);
 
 		textField_62 = new JTextField();
+		textField_62.setBackground(Color.GRAY);
 		textField_62.setEditable(false);
 		textField_62.setColumns(10);
 		textField_62.setBounds(453, 184, 42, 38);
 		contentPane.add(textField_62);
 
 		textField_63 = new JTextField();
+		textField_63.setBackground(Color.GRAY);
 		textField_63.setEditable(false);
 		textField_63.setColumns(10);
 		textField_63.setBounds(505, 184, 42, 38);
 		contentPane.add(textField_63);
 
 		textField_64 = new JTextField();
+		textField_64.setBackground(Color.GRAY);
 		textField_64.setEditable(false);
 		textField_64.setColumns(10);
 		textField_64.setBounds(349, 233, 42, 38);
 		contentPane.add(textField_64);
 
 		textField_65 = new JTextField();
+		textField_65.setBackground(Color.GRAY);
 		textField_65.setEditable(false);
 		textField_65.setColumns(10);
 		textField_65.setBounds(401, 233, 42, 38);
 		contentPane.add(textField_65);
 
 		textField_66 = new JTextField();
+		textField_66.setBackground(Color.GRAY);
 		textField_66.setEditable(false);
 		textField_66.setColumns(10);
 		textField_66.setBounds(453, 233, 42, 38);
 		contentPane.add(textField_66);
 
 		textField_67 = new JTextField();
+		textField_67.setBackground(Color.GRAY);
 		textField_67.setEditable(false);
 		textField_67.setColumns(10);
 		textField_67.setBounds(505, 233, 42, 38);
 		contentPane.add(textField_67);
 
 		textField_68 = new JTextField();
+		textField_68.setBackground(Color.GRAY);
 		textField_68.setEditable(false);
 		textField_68.setColumns(10);
 		textField_68.setBounds(349, 282, 42, 38);
 		contentPane.add(textField_68);
 
 		textField_69 = new JTextField();
+		textField_69.setBackground(Color.GRAY);
 		textField_69.setEditable(false);
 		textField_69.setColumns(10);
 		textField_69.setBounds(401, 282, 42, 38);
 		contentPane.add(textField_69);
 
 		textField_70 = new JTextField();
+		textField_70.setBackground(Color.GRAY);
 		textField_70.setEditable(false);
 		textField_70.setColumns(10);
 		textField_70.setBounds(453, 282, 42, 38);
 		contentPane.add(textField_70);
 
 		textField_71 = new JTextField();
+		textField_71.setBackground(Color.GRAY);
 		textField_71.setEditable(false);
 		textField_71.setColumns(10);
 		textField_71.setBounds(505, 282, 42, 38);
 		contentPane.add(textField_71);
 
 		textField_72 = new JTextField();
+		textField_72.setBackground(Color.GRAY);
 		textField_72.setEditable(false);
 		textField_72.setColumns(10);
 		textField_72.setBounds(349, 331, 42, 38);
 		contentPane.add(textField_72);
 
 		textField_73 = new JTextField();
+		textField_73.setBackground(Color.GRAY);
 		textField_73.setEditable(false);
 		textField_73.setColumns(10);
 		textField_73.setBounds(401, 331, 42, 38);
 		contentPane.add(textField_73);
 
 		textField_74 = new JTextField();
+		textField_74.setBackground(Color.GRAY);
 		textField_74.setEditable(false);
 		textField_74.setColumns(10);
 		textField_74.setBounds(453, 331, 42, 38);
 		contentPane.add(textField_74);
 
 		textField_75 = new JTextField();
+		textField_75.setBackground(Color.GRAY);
 		textField_75.setEditable(false);
 		textField_75.setColumns(10);
 		textField_75.setBounds(505, 331, 42, 38);
 		contentPane.add(textField_75);
 
 		textField_76 = new JTextField();
+		textField_76.setBackground(Color.GRAY);
 		textField_76.setEditable(false);
 		textField_76.setColumns(10);
 		textField_76.setBounds(349, 380, 42, 38);
 		contentPane.add(textField_76);
 
 		textField_77 = new JTextField();
+		textField_77.setBackground(Color.GRAY);
 		textField_77.setEditable(false);
 		textField_77.setColumns(10);
 		textField_77.setBounds(401, 380, 42, 38);
 		contentPane.add(textField_77);
 
 		textField_78 = new JTextField();
+		textField_78.setBackground(Color.GRAY);
 		textField_78.setEditable(false);
 		textField_78.setColumns(10);
 		textField_78.setBounds(453, 380, 42, 38);
 		contentPane.add(textField_78);
 
 		textField_79 = new JTextField();
+		textField_79.setBackground(Color.GRAY);
 		textField_79.setEditable(false);
 		textField_79.setColumns(10);
 		textField_79.setBounds(505, 380, 42, 38);
 		contentPane.add(textField_79);
 
 		textField_80 = new JTextField();
+		textField_80.setBackground(Color.GRAY);
 		textField_80.setEditable(false);
 		textField_80.setColumns(10);
 		textField_80.setBounds(349, 429, 42, 38);
 		contentPane.add(textField_80);
 
 		textField_81 = new JTextField();
+		textField_81.setBackground(Color.GRAY);
 		textField_81.setEditable(false);
 		textField_81.setColumns(10);
 		textField_81.setBounds(401, 429, 42, 38);
 		contentPane.add(textField_81);
 
 		textField_82 = new JTextField();
+		textField_82.setBackground(Color.GRAY);
 		textField_82.setEditable(false);
 		textField_82.setColumns(10);
 		textField_82.setBounds(453, 429, 42, 38);
 		contentPane.add(textField_82);
 
 		textField_83 = new JTextField();
+		textField_83.setBackground(Color.GRAY);
 		textField_83.setEditable(false);
 		textField_83.setColumns(10);
 		textField_83.setBounds(505, 429, 42, 38);
 		contentPane.add(textField_83);
 
 		textField_84 = new JTextField();
+		textField_84.setBackground(Color.GRAY);
 		textField_84.setEditable(false);
 		textField_84.setColumns(10);
 		textField_84.setBounds(349, 478, 42, 38);
 		contentPane.add(textField_84);
 
 		textField_85 = new JTextField();
+		textField_85.setBackground(Color.GRAY);
 		textField_85.setEditable(false);
 		textField_85.setColumns(10);
 		textField_85.setBounds(401, 478, 42, 38);
 		contentPane.add(textField_85);
 
 		textField_86 = new JTextField();
+		textField_86.setBackground(Color.GRAY);
 		textField_86.setEditable(false);
 		textField_86.setColumns(10);
 		textField_86.setBounds(453, 478, 42, 38);
 		contentPane.add(textField_86);
 
 		textField_87 = new JTextField();
+		textField_87.setBackground(Color.GRAY);
 		textField_87.setEditable(false);
 		textField_87.setColumns(10);
 		textField_87.setBounds(505, 478, 42, 38);
@@ -756,22 +796,22 @@ public class Principiante extends JFrame {
 
 					if (textField_8.getBackground().equals(textField_4.getBackground())) {
 						textField_12.setBackground(Color.black);
-					} else {
+					} else if(textField_8.getBackground().equals(textField_5.getBackground()) || textField_8.getBackground().equals(textField_6.getBackground()) || textField_8.getBackground().equals(textField_7.getBackground())) {
 						textField_12.setBackground(Color.white);
 					}
 					if (textField_9.getBackground().equals(textField_5.getBackground())) {
 						textField_13.setBackground(Color.black);
-					} else {
+					} else if(textField_9.getBackground().equals(textField_4.getBackground()) || textField_9.getBackground().equals(textField_6.getBackground()) || textField_9.getBackground().equals(textField_7.getBackground())) {
 						textField_13.setBackground(Color.white);
 					}
 					if (textField_10.getBackground().equals(textField_6.getBackground())) {
 						textField_14.setBackground(Color.black);
-					} else {
+					} else if(textField_10.getBackground().equals(textField_5.getBackground()) || textField_10.getBackground().equals(textField_4.getBackground()) || textField_10.getBackground().equals(textField_7.getBackground())) {
 						textField_14.setBackground(Color.white);
 					}
 					if (textField_11.getBackground().equals(textField_7.getBackground())) {
 						textField_15.setBackground(Color.black);
-					} else {
+					} else if(textField_11.getBackground().equals(textField_4.getBackground()) || textField_11.getBackground().equals(textField_5.getBackground()) || textField_11.getBackground().equals(textField_6.getBackground())) {
 						textField_15.setBackground(Color.white);
 					}
 					if (textField_12.getBackground().equals(Color.black)
@@ -793,22 +833,22 @@ public class Principiante extends JFrame {
 
 					if (textField_16.getBackground().equals(textField_4.getBackground())) {
 						textField_52.setBackground(Color.black);
-					} else {
+					} else if(textField_16.getBackground().equals(textField_5.getBackground()) || textField_16.getBackground().equals(textField_6.getBackground()) || textField_16.getBackground().equals(textField_7.getBackground())) {
 						textField_52.setBackground(Color.white);
 					}
 					if (textField_17.getBackground().equals(textField_5.getBackground())) {
 						textField_53.setBackground(Color.black);
-					} else {
+					} else if(textField_17.getBackground().equals(textField_4.getBackground()) || textField_17.getBackground().equals(textField_6.getBackground()) || textField_17.getBackground().equals(textField_7.getBackground())) {
 						textField_53.setBackground(Color.white);
 					}
 					if (textField_18.getBackground().equals(textField_6.getBackground())) {
 						textField_54.setBackground(Color.black);
-					} else {
+					} else if(textField_18.getBackground().equals(textField_5.getBackground()) || textField_18.getBackground().equals(textField_4.getBackground()) || textField_18.getBackground().equals(textField_7.getBackground())) {
 						textField_54.setBackground(Color.white);
 					}
 					if (textField_19.getBackground().equals(textField_7.getBackground())) {
 						textField_55.setBackground(Color.black);
-					} else {
+					} else if(textField_19.getBackground().equals(textField_5.getBackground()) || textField_19.getBackground().equals(textField_4.getBackground()) || textField_19.getBackground().equals(textField_6.getBackground())) {
 						textField_55.setBackground(Color.white);
 					}
 					if (textField_52.getBackground().equals(Color.black)
@@ -829,22 +869,22 @@ public class Principiante extends JFrame {
 
 					if (textField_20.getBackground().equals(textField_4.getBackground())) {
 						textField_56.setBackground(Color.black);
-					} else {
+					} else if(textField_20.getBackground().equals(textField_5.getBackground()) || textField_20.getBackground().equals(textField_6.getBackground()) || textField_20.getBackground().equals(textField_7.getBackground())) {
 						textField_56.setBackground(Color.white);
 					}
 					if (textField_21.getBackground().equals(textField_5.getBackground())) {
 						textField_57.setBackground(Color.black);
-					} else {
+					} else if(textField_21.getBackground().equals(textField_4.getBackground()) || textField_21.getBackground().equals(textField_6.getBackground()) || textField_21.getBackground().equals(textField_7.getBackground())) {
 						textField_57.setBackground(Color.white);
 					}
 					if (textField_22.getBackground().equals(textField_6.getBackground())) {
 						textField_58.setBackground(Color.black);
-					} else {
+					} else if(textField_22.getBackground().equals(textField_5.getBackground()) || textField_22.getBackground().equals(textField_4.getBackground()) || textField_22.getBackground().equals(textField_7.getBackground())) {
 						textField_58.setBackground(Color.white);
 					}
 					if (textField_23.getBackground().equals(textField_7.getBackground())) {
 						textField_59.setBackground(Color.black);
-					} else {
+					} else if(textField_23.getBackground().equals(textField_5.getBackground()) || textField_23.getBackground().equals(textField_4.getBackground()) || textField_23.getBackground().equals(textField_6.getBackground())) {
 						textField_59.setBackground(Color.white);
 					}
 					if (textField_56.getBackground().equals(Color.black)
@@ -865,22 +905,22 @@ public class Principiante extends JFrame {
 
 					if (textField_24.getBackground().equals(textField_4.getBackground())) {
 						textField_60.setBackground(Color.black);
-					} else {
+					} else if(textField_24.getBackground().equals(textField_5.getBackground()) || textField_24.getBackground().equals(textField_6.getBackground()) || textField_24.getBackground().equals(textField_7.getBackground())) {
 						textField_60.setBackground(Color.white);
 					}
 					if (textField_25.getBackground().equals(textField_5.getBackground())) {
 						textField_61.setBackground(Color.black);
-					} else {
+					} else if(textField_25.getBackground().equals(textField_4.getBackground()) || textField_25.getBackground().equals(textField_6.getBackground()) || textField_25.getBackground().equals(textField_7.getBackground())) {
 						textField_61.setBackground(Color.white);
 					}
 					if (textField_26.getBackground().equals(textField_6.getBackground())) {
 						textField_62.setBackground(Color.black);
-					} else {
+					} else if(textField_26.getBackground().equals(textField_5.getBackground()) || textField_26.getBackground().equals(textField_4.getBackground()) || textField_26.getBackground().equals(textField_7.getBackground())) {
 						textField_62.setBackground(Color.white);
 					}
 					if (textField_27.getBackground().equals(textField_7.getBackground())) {
 						textField_63.setBackground(Color.black);
-					} else {
+					} else if(textField_27.getBackground().equals(textField_5.getBackground()) || textField_27.getBackground().equals(textField_4.getBackground()) || textField_27.getBackground().equals(textField_6.getBackground())) {
 						textField_63.setBackground(Color.white);
 					}
 					if (textField_60.getBackground().equals(Color.black)
@@ -901,22 +941,22 @@ public class Principiante extends JFrame {
 
 					if (textField_28.getBackground().equals(textField_4.getBackground())) {
 						textField_64.setBackground(Color.black);
-					} else {
+					} else if(textField_28.getBackground().equals(textField_5.getBackground()) || textField_28.getBackground().equals(textField_6.getBackground()) || textField_28.getBackground().equals(textField_7.getBackground())) {
 						textField_64.setBackground(Color.white);
 					}
 					if (textField_29.getBackground().equals(textField_5.getBackground())) {
 						textField_65.setBackground(Color.black);
-					} else {
+					} else if(textField_29.getBackground().equals(textField_4.getBackground()) || textField_29.getBackground().equals(textField_6.getBackground()) || textField_29.getBackground().equals(textField_7.getBackground())) {
 						textField_65.setBackground(Color.white);
 					}
 					if (textField_30.getBackground().equals(textField_6.getBackground())) {
 						textField_66.setBackground(Color.black);
-					} else {
+					} else if(textField_30.getBackground().equals(textField_5.getBackground()) || textField_30.getBackground().equals(textField_4.getBackground()) || textField_30.getBackground().equals(textField_7.getBackground())) {
 						textField_66.setBackground(Color.white);
 					}
 					if (textField_31.getBackground().equals(textField_7.getBackground())) {
 						textField_67.setBackground(Color.black);
-					} else {
+					} else if(textField_31.getBackground().equals(textField_5.getBackground()) || textField_31.getBackground().equals(textField_4.getBackground()) || textField_31.getBackground().equals(textField_6.getBackground())) {
 						textField_67.setBackground(Color.white);
 					}
 					if (textField_64.getBackground().equals(Color.black)
@@ -937,22 +977,22 @@ public class Principiante extends JFrame {
 
 					if (textField_32.getBackground().equals(textField_4.getBackground())) {
 						textField_68.setBackground(Color.black);
-					} else {
+					} else if(textField_32.getBackground().equals(textField_5.getBackground()) || textField_32.getBackground().equals(textField_6.getBackground()) || textField_32.getBackground().equals(textField_7.getBackground())) {
 						textField_68.setBackground(Color.white);
 					}
 					if (textField_33.getBackground().equals(textField_5.getBackground())) {
 						textField_69.setBackground(Color.black);
-					} else {
+					} else if(textField_33.getBackground().equals(textField_4.getBackground()) || textField_33.getBackground().equals(textField_6.getBackground()) || textField_33.getBackground().equals(textField_7.getBackground())) {
 						textField_69.setBackground(Color.white);
 					}
 					if (textField_34.getBackground().equals(textField_6.getBackground())) {
 						textField_70.setBackground(Color.black);
-					} else {
+					} else if(textField_34.getBackground().equals(textField_5.getBackground()) || textField_34.getBackground().equals(textField_4.getBackground()) || textField_34.getBackground().equals(textField_7.getBackground())) {
 						textField_70.setBackground(Color.white);
 					}
 					if (textField_35.getBackground().equals(textField_7.getBackground())) {
 						textField_71.setBackground(Color.black);
-					} else {
+					} else if(textField_35.getBackground().equals(textField_5.getBackground()) || textField_35.getBackground().equals(textField_4.getBackground()) || textField_35.getBackground().equals(textField_6.getBackground())) {
 						textField_71.setBackground(Color.white);
 					}
 					if (textField_68.getBackground().equals(Color.black)
@@ -973,22 +1013,22 @@ public class Principiante extends JFrame {
 
 					if (textField_36.getBackground().equals(textField_4.getBackground())) {
 						textField_72.setBackground(Color.black);
-					} else {
+					} else if(textField_36.getBackground().equals(textField_5.getBackground()) || textField_36.getBackground().equals(textField_6.getBackground()) || textField_36.getBackground().equals(textField_7.getBackground())) {
 						textField_72.setBackground(Color.white);
 					}
 					if (textField_37.getBackground().equals(textField_5.getBackground())) {
 						textField_73.setBackground(Color.black);
-					} else {
+					} else if(textField_37.getBackground().equals(textField_4.getBackground()) || textField_37.getBackground().equals(textField_6.getBackground()) || textField_37.getBackground().equals(textField_7.getBackground())) {
 						textField_73.setBackground(Color.white);
 					}
 					if (textField_38.getBackground().equals(textField_6.getBackground())) {
 						textField_74.setBackground(Color.black);
-					} else {
+					} else if(textField_38.getBackground().equals(textField_5.getBackground()) || textField_38.getBackground().equals(textField_4.getBackground()) || textField_38.getBackground().equals(textField_7.getBackground())) {
 						textField_74.setBackground(Color.white);
 					}
 					if (textField_39.getBackground().equals(textField_7.getBackground())) {
 						textField_75.setBackground(Color.black);
-					} else {
+					} else if(textField_39.getBackground().equals(textField_5.getBackground()) || textField_39.getBackground().equals(textField_4.getBackground()) || textField_39.getBackground().equals(textField_6.getBackground())) {
 						textField_75.setBackground(Color.white);
 					}
 					if (textField_72.getBackground().equals(Color.black)
@@ -1009,22 +1049,22 @@ public class Principiante extends JFrame {
 
 					if (textField_40.getBackground().equals(textField_4.getBackground())) {
 						textField_76.setBackground(Color.black);
-					} else {
+					} else if(textField_40.getBackground().equals(textField_5.getBackground()) || textField_40.getBackground().equals(textField_6.getBackground()) || textField_40.getBackground().equals(textField_7.getBackground())) {
 						textField_76.setBackground(Color.white);
 					}
 					if (textField_41.getBackground().equals(textField_5.getBackground())) {
 						textField_77.setBackground(Color.black);
-					} else {
+					} else if(textField_41.getBackground().equals(textField_4.getBackground()) || textField_41.getBackground().equals(textField_6.getBackground()) || textField_41.getBackground().equals(textField_7.getBackground())) {
 						textField_77.setBackground(Color.white);
 					}
 					if (textField_42.getBackground().equals(textField_6.getBackground())) {
 						textField_78.setBackground(Color.black);
-					} else {
+					} else if(textField_42.getBackground().equals(textField_5.getBackground()) || textField_42.getBackground().equals(textField_4.getBackground()) || textField_42.getBackground().equals(textField_7.getBackground())) {
 						textField_78.setBackground(Color.white);
 					}
 					if (textField_43.getBackground().equals(textField_7.getBackground())) {
 						textField_79.setBackground(Color.black);
-					} else {
+					} else if(textField_43.getBackground().equals(textField_5.getBackground()) || textField_43.getBackground().equals(textField_4.getBackground()) || textField_43.getBackground().equals(textField_6.getBackground())) {
 						textField_79.setBackground(Color.white);
 					}
 					if (textField_76.getBackground().equals(Color.black)
@@ -1045,22 +1085,22 @@ public class Principiante extends JFrame {
 
 					if (textField_44.getBackground().equals(textField_4.getBackground())) {
 						textField_80.setBackground(Color.black);
-					} else {
+					} else if(textField_44.getBackground().equals(textField_5.getBackground()) || textField_44.getBackground().equals(textField_6.getBackground()) || textField_44.getBackground().equals(textField_7.getBackground())) {
 						textField_80.setBackground(Color.white);
 					}
 					if (textField_45.getBackground().equals(textField_5.getBackground())) {
 						textField_81.setBackground(Color.black);
-					} else {
+					} else if(textField_45.getBackground().equals(textField_4.getBackground()) || textField_45.getBackground().equals(textField_6.getBackground()) || textField_45.getBackground().equals(textField_7.getBackground())) {
 						textField_81.setBackground(Color.white);
 					}
 					if (textField_46.getBackground().equals(textField_6.getBackground())) {
 						textField_82.setBackground(Color.black);
-					} else {
+					} else if(textField_46.getBackground().equals(textField_4.getBackground()) || textField_46.getBackground().equals(textField_5.getBackground()) || textField_46.getBackground().equals(textField_7.getBackground())) {
 						textField_82.setBackground(Color.white);
 					}
 					if (textField_47.getBackground().equals(textField_7.getBackground())) {
 						textField_83.setBackground(Color.black);
-					} else {
+					} else if(textField_47.getBackground().equals(textField_5.getBackground()) || textField_47.getBackground().equals(textField_4.getBackground()) || textField_47.getBackground().equals(textField_6.getBackground())) {
 						textField_83.setBackground(Color.white);
 					}
 					if (textField_80.getBackground().equals(Color.black)
@@ -1081,22 +1121,22 @@ public class Principiante extends JFrame {
 
 					if (textField_48.getBackground().equals(textField_4.getBackground())) {
 						textField_84.setBackground(Color.black);
-					} else {
+					} else if(textField_48.getBackground().equals(textField_5.getBackground()) || textField_48.getBackground().equals(textField_6.getBackground()) || textField_48.getBackground().equals(textField_7.getBackground())) {
 						textField_84.setBackground(Color.white);
 					}
 					if (textField_49.getBackground().equals(textField_5.getBackground())) {
 						textField_85.setBackground(Color.black);
-					} else {
+					} else if(textField_49.getBackground().equals(textField_4.getBackground()) || textField_49.getBackground().equals(textField_6.getBackground()) || textField_49.getBackground().equals(textField_7.getBackground())) {
 						textField_85.setBackground(Color.white);
 					}
 					if (textField_50.getBackground().equals(textField_6.getBackground())) {
 						textField_86.setBackground(Color.black);
-					} else {
+					} else if(textField_50.getBackground().equals(textField_4.getBackground()) || textField_50.getBackground().equals(textField_5.getBackground()) || textField_50.getBackground().equals(textField_7.getBackground())) {
 						textField_86.setBackground(Color.white);
 					}
 					if (textField_51.getBackground().equals(textField_7.getBackground())) {
 						textField_87.setBackground(Color.black);
-					} else {
+					} else if(textField_51.getBackground().equals(textField_5.getBackground()) || textField_51.getBackground().equals(textField_4.getBackground()) || textField_51.getBackground().equals(textField_6.getBackground())) {
 						textField_87.setBackground(Color.white);
 					}
 					if (textField_84.getBackground().equals(Color.black)

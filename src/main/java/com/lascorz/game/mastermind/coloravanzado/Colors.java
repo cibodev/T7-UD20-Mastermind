@@ -85,22 +85,7 @@ public class Colors extends JFrame {
 		textField_3.setBounds(242, 48, 40, 36);
 		contentPane.add(textField_3);
 		
-		
-		// Botón aceptar //
 		JButton btnNewButton = new JButton("Aceptar");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Avanzado.colores[0]=textField.getBackground();
-				Avanzado.colores[1]=textField_1.getBackground();
-				Avanzado.colores[2]=textField_2.getBackground();
-				Avanzado.colores[3]=textField_3.getBackground();
-				Avanzado.colores[4]=textField_4.getBackground();
-				Avanzado.colores[5]=textField_5.getBackground();
-
-				Avanzado.randomColors();
-				venta.dispose();
-			}
-		});
 		btnNewButton.setBounds(128, 140, 89, 23);
 		contentPane.add(btnNewButton);
 		
@@ -120,6 +105,22 @@ public class Colors extends JFrame {
 		textField_5.setColumns(10);
 		textField_5.setBounds(371, 48, 40, 36);
 		contentPane.add(textField_5);
+		
+		// Botón aceptar //
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Avanzado.colores[0]=textField.getBackground();
+				Avanzado.colores[1]=textField_1.getBackground();
+				Avanzado.colores[2]=textField_2.getBackground();
+				Avanzado.colores[3]=textField_3.getBackground();
+				Avanzado.colores[4]=textField_4.getBackground();
+				Avanzado.colores[5]=textField_5.getBackground();
+
+				Avanzado.randomColors();
+				venta.dispose();
+			}
+		});
+
 		
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
